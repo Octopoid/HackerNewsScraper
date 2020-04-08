@@ -4,14 +4,15 @@
     using HtmlAgilityPack;
 
     /// <summary>
-    ///     Common extension methods for the <see cref="HtmlNode"/> class.
+    ///     Common extension methods for the <see cref="HtmlNode" /> class.
     /// </summary>
     public static class HtmlNodeExtensions
     {
         /// <summary>
-        /// Finds the single <see cref="HtmlNode"/> inside represented by the given xPath and reads the InnerText. If the regular expression has been provided, it is then used to remove any matching text.
+        ///     Finds the single <see cref="HtmlNode" /> inside represented by the given xPath and reads the InnerText. If the
+        ///     regular expression has been provided, it is then used to remove any matching text.
         /// </summary>
-        /// <param name="node">The parent <see cref="HtmlNode"/>.</param>
+        /// <param name="node">The parent <see cref="HtmlNode" />.</param>
         /// <param name="xPath">The xPath to search the parent node with.</param>
         /// <param name="regexRemove">A regular expression which is used to find text to remove from the InnerText.</param>
         /// <returns>The selected inner nodes InnerText, after the optional regular expression has been used to remove matches.</returns>
@@ -21,9 +22,10 @@
         }
 
         /// <summary>
-        /// Finds the single <see cref="HtmlNode"/> inside represented by the given xPath and reads the InnerText. If the regular expression has been provided, it is then used to remove any matching text.
+        ///     Finds the single <see cref="HtmlNode" /> inside represented by the given xPath and reads the InnerText. If the
+        ///     regular expression has been provided, it is then used to remove any matching text.
         /// </summary>
-        /// <param name="node">The parent <see cref="HtmlNode"/>.</param>
+        /// <param name="node">The parent <see cref="HtmlNode" />.</param>
         /// <param name="xPath">The xPath to search the parent node with.</param>
         /// <param name="regexRemove">A regular expression which is used to find text to remove from the InnerText.</param>
         /// <returns>The selected inner nodes InnerText, after the optional regular expression has been used to remove matches.</returns>

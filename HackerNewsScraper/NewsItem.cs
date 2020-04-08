@@ -2,6 +2,9 @@
 {
     using System.Text;
 
+    /// <summary>
+    ///     Represents a single YCombinator news item.
+    /// </summary>
     public class NewsItem
     {
         private readonly string title;
@@ -11,6 +14,15 @@
         private readonly uint comments;
         private readonly uint rank;
 
+        /// <summary>
+        ///     Initializes a new instance of the <see cref="NewsItem" /> class.
+        /// </summary>
+        /// <param name="title">The title of the news item, limited to 256 characters.</param>
+        /// <param name="uri">The Uri the news item links to. This is always an absolute Uri.</param>
+        /// <param name="author">The author of the news item, limited to 256 characters.</param>
+        /// <param name="points">The number of points that have been given to the news item.</param>
+        /// <param name="comments">The number of comments that have been made on the news item.</param>
+        /// <param name="rank">The index of the news item at the moment of scraping.</param>
         public NewsItem(string title,
                         string uri,
                         string author,
@@ -26,17 +38,35 @@
             this.rank = rank;
         }
 
-        public string Title { get { return this.title; } }
-
-        public string Uri { get { return this.uri; } }
-
+        /// <summary>
+        ///     The author of the news item, limited to 256 characters.
+        /// </summary>
         public string Author { get { return this.author; } }
 
-        public uint Points { get { return this.points; } }
-
+        /// <summary>
+        ///     The number of comments that have been made on the news item.
+        /// </summary>
         public uint Comments { get { return this.comments; } }
 
+        /// <summary>
+        ///     The number of points that have been given to the news item.
+        /// </summary>
+        public uint Points { get { return this.points; } }
+
+        /// <summary>
+        ///     The index of the news item at the moment of scraping.
+        /// </summary>
         public uint Rank { get { return this.rank; } }
+
+        /// <summary>
+        ///     The title of the news item, limited to 256 characters.
+        /// </summary>
+        public string Title { get { return this.title; } }
+
+        /// <summary>
+        ///     The Uri the news item links to. This is always an absolute Uri.
+        /// </summary>
+        public string Uri { get { return this.uri; } }
 
         /// <inheritdoc />
         public override string ToString()
