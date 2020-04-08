@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsScraper.Tests", "HackerNewsScraper.Tests\HackerNewsScraper.Tests.csproj", "{0A6A8112-DF83-46DC-893E-9F9687E7826F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{264109F7-56CD-4749-8E41-0659FE5BE3E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{264109F7-56CD-4749-8E41-0659FE5BE3E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{264109F7-56CD-4749-8E41-0659FE5BE3E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6A8112-DF83-46DC-893E-9F9687E7826F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6A8112-DF83-46DC-893E-9F9687E7826F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6A8112-DF83-46DC-893E-9F9687E7826F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6A8112-DF83-46DC-893E-9F9687E7826F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

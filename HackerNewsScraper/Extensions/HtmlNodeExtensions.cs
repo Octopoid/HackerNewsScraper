@@ -31,15 +31,19 @@
         /// <returns>The selected inner nodes InnerText, after the optional regular expression has been used to remove matches.</returns>
         public static string ParseSingleNodeInnerText(this HtmlNode node, string xPath, Regex regexRemove = null)
         {
+            // Find the node using the xPath.
             HtmlNode innerNode = node.SelectSingleNode(xPath);
 
+            // If the xPath returns nothing, preserve the null result.
             if (innerNode == null)
             {
                 return null;
             }
 
+            // Get the inner text. Nulls are replaced with blank strings.
             string innerText = innerNode.InnerText ?? string.Empty;
 
+            // If a regex is supplied, find any matches and remove them.
             if (regexRemove != null)
             {
                 innerText = regexRemove.Replace(innerText, "");

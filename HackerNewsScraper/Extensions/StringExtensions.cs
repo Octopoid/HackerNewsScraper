@@ -32,7 +32,7 @@
             }
 
             // Append long strings with an ellipsis
-            if (inputLength > 16)
+            if (length > 16 && inputLength > 16)
             {
                 return $"{input.Substring(0, length - 3)}...";
             }

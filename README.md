@@ -1,5 +1,7 @@
 # Hacker News Scraper
 
+A console application for scraping news stories from a provided Url and exporting the results as Json.
+
 ## Usage Instructions
 
 * The application requires .NET Core 3.1, which can be downloaded [here](https://dotnet.microsoft.com/download/dotnet-core/3.1).
@@ -17,10 +19,6 @@
 
 Simplifies the process of parsing command line arguments.
 
-### [Flurl](https://flurl.dev/)
-
-Contains simple, powerful helper functions for validating and maniuplating Urls.
-
 ### [HtmlAgilityPack](https://html-agility-pack.net/)
 
 Provides an API for downloading and parsing Html documents into a queryable node model. Used by the scraper to locate and extract the data.
@@ -28,3 +26,7 @@ Provides an API for downloading and parsing Html documents into a queryable node
 ### [Newtonsoft.Json](https://www.newtonsoft.com/json)
 
 Used to serialize the final output as Json.
+
+### [Flurl](https://flurl.dev/)
+
+Contains simple, powerful helper functions for validating and maniuplating Urls.
