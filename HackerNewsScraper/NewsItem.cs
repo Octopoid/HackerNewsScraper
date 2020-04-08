@@ -2,7 +2,7 @@
 {
     using System.Text;
 
-    public struct NewsItem
+    public class NewsItem
     {
         private readonly string title;
         private readonly string uri;

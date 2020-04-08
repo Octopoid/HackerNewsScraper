@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HackerNewsScraper.Extensions
+﻿namespace HackerNewsScraper.Extensions
 {
+    /// <summary>
+    ///     Common extension methods for the <see cref="string"/> class.
+    /// </summary>
     public static class StringExtensions
     {
+        /// <summary>
+        /// Limits the length of a given string. If the string is longer than 16 characters, an ellipsis is added.
+        /// Null input strings are preserved.
+        /// </summary>
+        /// <param name="input">The input string to limit the length of.</param>
+        /// <param name="length">The maximum length of the string. If the input string is longer than 16 characters, this maximum length includes 3 periods to form an ellipsis.</param>
+        /// <returns>The length limited string.</returns>
         public static string LimitLength(this string input, int length)
         {
             // Preserve nulls - extension methods compile to static methods, so null calls are possible.
@@ -29,7 +35,6 @@ namespace HackerNewsScraper.Extensions
             }
 
             return input.Substring(0, length);
-
         }
     }
 }
