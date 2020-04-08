@@ -1,8 +1,6 @@
 ﻿namespace HackerNewsScraper
 {
     using System;
-    using System.Collections;
-    using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
     using CommandLine;
@@ -10,20 +8,11 @@
 
     public class Program
     {
-        public class Options
-        {
-            [Option('u', "url", Required = false, HelpText = "The url to scrape news articles from.")]
-            public string Url { get; set; } = "https://news.ycombinator.com/";
-            
-            [Option('p', "posts", Required = false, HelpText = "How many posts to print. A positive integer <= 100.")]
-            public int Posts { get; set; } = 10;
-        }
-
         public static void Main(string[] args)
         {
             if (Debugger.IsAttached)
             {
-                args = new[] {"-p", "10"};
+                args = new[] {"-p", "100"};
             }
 
             // Run the Main method using the parsed arguments.
@@ -48,6 +37,15 @@
             string json = JsonConvert.SerializeObject(scraped.Items.ToArray(), Formatting.Indented);
 
             Console.Out.WriteLine(json);
+        }
+
+        public class Options
+        {
+            [Option('p', "posts", Required = false, HelpText = "How many posts to print. A positive integer <= 100.")]
+            public int Posts { get; set; } = 10;
+
+            [Option('u', "url", Required = false, HelpText = "The url to scrape news articles from.")]
+            public string Uri { get; set; } = "https://news.ycombinator.com/";
         }
     }
 }
