@@ -9,7 +9,7 @@ A console application for scraping news stories from a provided Url and exportin
 * Open a command line window such as `cmd` or `powershell`, and navigate to the build folder.
 * Run `NewsScraper.exe` with the following parameters:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-p n`&nbsp;&nbsp;&nbsp;&nbsp;`--post n`&nbsp;&nbsp;&nbsp;&nbsp;Sets the number of posts to scrape. Should be an integer between 1 and 100. Optional, defaults to 10.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-p n`&nbsp;&nbsp;&nbsp;&nbsp;`--posts n`&nbsp;&nbsp;&nbsp;&nbsp;Sets the number of posts to scrape. Should be an integer between 1 and 100. Optional, defaults to 10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-u url`&nbsp;&nbsp;&nbsp;&nbsp;`--url url`&nbsp;&nbsp;&nbsp;&nbsp;Sets the url to scrape the news items from. Optional, defaults to https://news.ycombinator.com/
 

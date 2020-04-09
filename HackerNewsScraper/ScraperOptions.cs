@@ -16,7 +16,7 @@
 
         /// <summary>
         ///     The type of scraper to use. Currently only YCombinator is supported.
-        ///     TODO: Reddit
+        ///     TODO: Other scrapers, e.g. Reddit
         /// </summary>
         public ScraperType ScraperType { get; set; }
 
